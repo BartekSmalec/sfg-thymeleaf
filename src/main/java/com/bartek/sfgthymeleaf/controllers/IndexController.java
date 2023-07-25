@@ -19,4 +19,9 @@ public class IndexController {
         model.addAttribute("products", productService.listProducts());
         return "index";
     }
+
+    @RequestMapping("secured")
+    public String secured(){
+        return "secured";
+    }
 }
